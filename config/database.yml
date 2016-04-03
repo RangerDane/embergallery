@@ -82,7 +82,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: EmberGallery_production
+  database: ebdb
   username: <%= ENV['EMBERGALLERY_DATABASE_USERNAME'] %>
   password: <%= ENV['EMBERGALLERY_DATABASE_PASSWORD'] %>
   host: aa1ofk2ctkbmytb.crmvfsndhqjp.us-west-2.rds.amazonaws.com
