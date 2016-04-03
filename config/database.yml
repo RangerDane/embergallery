@@ -78,8 +78,12 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: EmberGallery_production
-  username: EmberGallery
+  username: <%= ENV['EMBERGALLERY_DATABASE_USERNAME'] %>
   password: <%= ENV['EMBERGALLERY_DATABASE_PASSWORD'] %>
+  host: aa1ofk2ctkbmytb.crmvfsndhqjp.us-west-2.rds.amazonaws.com
+  port: 5432
