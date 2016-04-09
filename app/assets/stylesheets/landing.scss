@@ -2,8 +2,121 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1
+$light: white;
+$dark: #033649;
+
+html, body
 {
-  font-family: "Bitter", Serif;
-  color: blue;
+  height: 100vh;
+  font-family: "Bitter";
+}
+
+div.landing
+{
+  height: 100vh;
+  background-color: $light;
+  color: $dark;
+
+  display: flex;
+  div.floater
+  {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-align: center;
+    h1
+    {
+      margin: 5px;
+      padding: 5px;
+    }
+    p
+    {
+      margin: 5px;
+      padding: 5px;
+    }
+    form
+    {
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      span
+      {
+        display: flex;
+        label
+        {
+          min-width: 25%;
+        }
+        input
+        {
+          flex: 1 0 auto;
+        }
+      }
+      label
+      {
+        font-size: 14px;
+        padding: 5px;
+      }
+      input
+      {
+        font-size: 14px;
+        padding: 5px;
+        margin: 0 5px 5px 5px;
+        background-color: $dark;
+        color: $light;
+      }
+      input.button
+      {
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      input.button:hover
+      {
+
+      }
+    }
+  }
+  div.left
+  {
+    flex: 1 0 auto;
+    background-color: $dark;
+    color: $light;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    form
+    {
+      label
+      {
+        text-align: right;
+      }
+      input
+      {
+        background-color: $light;
+        color: $dark;
+      }
+    }
+  }
+  div.right
+  {
+    flex: 1 0 auto;
+    background-color: $light;
+    color: $dark;
+    max-width: 50vw;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    form
+    {
+      label
+      {
+        text-align: right;
+      }
+    }
+  }
+
 }

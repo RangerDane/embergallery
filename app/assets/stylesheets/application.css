@@ -12,4 +12,6 @@
  *
  *dont require_tree .
  *= require_self
+ *= require reset.scss
+ *= require landing.scss
  */
