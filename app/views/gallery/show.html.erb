@@ -1,0 +1,9 @@
+<% content_for :javascript_includes do %>
+  <%= javascript_include_tag "gallery.js" %>
+<% end %>
+<% content_for :page_title do %>
+  <%= @gallery.name %>
+<% end %>
+
+<div id="everything">
+</div>

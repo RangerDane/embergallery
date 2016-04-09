@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
   match '/', to: 'landing#index', constraints: { subdomain: 'www' }, via: [:get, :post, :put, :patch, :delete]
-  match '/', to: 'landing#subdomain', constraints: { subdomain: /.+/ }, via: [:get, :post, :put, :patch, :delete]
+  get 'gallery/:subdomain', to: 'gallery#show'
+  match '/', to: 'gallery#show', constraints: { subdomain: /.+/ }, via: [:get, :post, :put, :patch, :delete]
 
   root to: 'landing#index'
 
