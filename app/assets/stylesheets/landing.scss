@@ -4,6 +4,8 @@
 
 $light: white;
 $dark: #033649;
+$medium: #077dab;
+$shadow: #022431;
 
 html, body
 {
@@ -65,16 +67,27 @@ div.landing
         margin: 0 5px 5px 5px;
         background-color: $dark;
         color: $light;
+
+        border-radius: 5px;
+
+        transition: 0.1s;
       }
       input.button
       {
         text-align: center;
         font-size: 18px;
         font-weight: bold;
+
       }
       input.button:hover
       {
-
+        background-color: $medium;
+        box-shadow: 0px 5px 0px $shadow;
+      }
+      input.button:active
+      {
+        box-shadow: 0px 0px 0px $shadow;
+        transform: translateY( 5px );
       }
     }
   }

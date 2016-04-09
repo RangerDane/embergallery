@@ -10850,3 +10850,595 @@ Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f
 
 
 Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:34:34 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:36:31 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 208ms (Views: 206.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-5686eb1ea72b246530ee647e703db2e73fade13ad6ad49ef8fe430907fddff9d.css?body=1" for ::1 at 2016-04-08 21:36:32 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:36:32 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:36:32 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:36:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:36:32 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:36:56 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 97ms (Views: 94.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-ed20eecf506c1b7beaafc349266921a42ae5f80e0dc32a07b93a60406921ca49.css?body=1" for ::1 at 2016-04-08 21:36:56 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:36:56 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:36:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:36:56 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:36:56 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:37:09 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 95ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:37:09 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:37:09 -0700
+
+
+Started GET "/assets/landing.self-f0e1475a2f1bff5fe52b262b20e48d8ea2379b066631f588d0ce02c05011d02f.css?body=1" for ::1 at 2016-04-08 21:37:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:37:09 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:37:09 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:37:46 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 297ms (Views: 286.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-dc9d9adaaf05818f1860f097900e645de3d706ea586ed4b1e662e9111b600a1c.css?body=1" for ::1 at 2016-04-08 21:37:47 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:37:47 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:37:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:37:47 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:37:47 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:37:58 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-635532a73b09fc8ecf8d5427eed7890c100c165ecf8b071ad333fddaa8b9f6a5.css?body=1" for ::1 at 2016-04-08 21:37:58 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:37:58 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:37:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:37:58 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:37:58 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:05 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 95ms (Views: 94.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:38:06 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:38:06 -0700
+
+
+Started GET "/assets/landing.self-9fdd3d867f1ae2a9444c0721dde4742ef0c4acdaf612de1e4f42bc4ecacb3b42.css?body=1" for ::1 at 2016-04-08 21:38:06 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:38:06 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:38:06 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-08 21:38:12 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"2vhKKlV/Zc+B9+qtWtxghqgQSFPT2wkIFql0xssx9Cq7DdaA7kT1n1Z7rWknXU828T7/BFx8VDBIqK/IzXR6bg==", "email"=>"asdf asdf asdf asdf asdf ", "password"=>"[FILTERED]", "name"=>"Sign In"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:12 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-08 21:38:13 -0700
+Processing by LandingController#signup as HTML
+  Parameters: {"authenticity_token"=>"XlMA45IYHUCDiZ/KnBxa8PEkzEsK9kNg5xlBfBmEjag/ppxJKSONEFQF2A7hnXVAqAp7HIVRHli5GJpyH8ED7A==", "code"=>"", "submit"=>"Sign Up"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:13 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:32 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 111ms (Views: 109.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:38:32 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:38:32 -0700
+
+
+Started GET "/assets/landing.self-c6f6134a2d43cffbc01694b4c87ec57645b8850ecc572bab972cc6a89293a09b.css?body=1" for ::1 at 2016-04-08 21:38:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:38:32 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:38:32 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:34 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:38:34 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:38:34 -0700
+
+
+Started GET "/assets/landing.self-c6f6134a2d43cffbc01694b4c87ec57645b8850ecc572bab972cc6a89293a09b.css?body=1" for ::1 at 2016-04-08 21:38:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:38:34 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:38:34 -0700
+
+
+Started POST "/signup" for ::1 at 2016-04-08 21:38:36 -0700
+Processing by LandingController#signup as HTML
+  Parameters: {"authenticity_token"=>"5qApHjhNi5S6dWPeeqnFacOII9q3Og+pKpHqMOiW98OHVbW0g3YbxG35JBoHKOrZmqaUjTidUpF0kDE+7tN5hw==", "code"=>"", "submit"=>"Sign Up"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:36 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:51 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 104ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:38:51 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:38:51 -0700
+
+
+Started GET "/assets/landing.self-e4b3710b45367df176985bcdeae835f25f8b111f814c09b1ddb71a5aaf420f10.css?body=1" for ::1 at 2016-04-08 21:38:51 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:38:51 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:38:51 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:56 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 91ms (Views: 90.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-ab05dd4d1fe0f7ed13fdd48018d6a7f31e6479291ac805ac8b9d8df1daecf1ee.css?body=1" for ::1 at 2016-04-08 21:38:56 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:38:56 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:38:56 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:38:56 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:38:56 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-08 21:38:58 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"iBFoIJKAkdXu9PgBkQVwYPh0AZkLw5av3xD2z0gg94rp5PSKKbsBhTl4v8XshF/QoVq2zoRky5eBES3BTmV5zg==", "email"=>"", "password"=>"[FILTERED]", "name"=>"Sign In"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:38:58 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 41ms (Views: 39.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:39:08 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 92ms (Views: 91.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:39:08 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:39:08 -0700
+
+
+Started GET "/assets/landing.self-a737d5d07bf2ad7c02707f81617e60996b9889667ee254391386db98c8231e1b.css?body=1" for ::1 at 2016-04-08 21:39:08 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:39:08 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:39:08 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:39:16 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-f4270237bd1100d2071b2273ddf64260d9e12bba948aafd5edcb307c424d456d.css?body=1" for ::1 at 2016-04-08 21:39:16 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:39:16 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:39:16 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:39:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:39:16 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:39:33 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 95ms (Views: 93.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:39:34 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:39:34 -0700
+
+
+Started GET "/assets/landing.self-b894581b80ffff400e838b8e4b93b9d9b30bd7ea768494131b94eb53ef3047af.css?body=1" for ::1 at 2016-04-08 21:39:34 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:39:34 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:39:34 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:40:12 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 258ms (Views: 245.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-a88b22e372ba13295e99b69889cdaaa977c1020f2e251a579689663d0a0efeaf.css?body=1" for ::1 at 2016-04-08 21:40:13 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:40:13 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:40:13 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:40:13 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:40:13 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:40:46 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 215ms (Views: 208.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-45dbe019d39dacdb81d1ae0cd8bc6f103ef5d67e0797749783e7b2cb42edba89.css?body=1" for ::1 at 2016-04-08 21:40:47 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:40:47 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:40:47 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:40:47 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:40:47 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:41:15 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 117ms (Views: 114.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:41:16 -0700
+
+
+Started GET "/assets/landing.self-c17ca67811c76e48d6228ec121b6806234ca581f3e604f8eaf224ece2eda7921.css?body=1" for ::1 at 2016-04-08 21:41:16 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:41:16 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:41:16 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:41:16 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:42:36 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 374ms (Views: 362.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-eb5a8bf60332e365920c5cb2d43b6057e5473a842832315ee872bf2d011f51db.css?body=1" for ::1 at 2016-04-08 21:42:37 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:42:37 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:42:37 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:42:37 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:42:37 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:42:58 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 181ms (Views: 172.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6fa9ec2ae62947337e75fa82122af95348a491267912acf13cb1338cd0d3d8f9.css?body=1" for ::1 at 2016-04-08 21:42:58 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:42:58 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:42:58 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:42:58 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:42:58 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-08 21:43:01 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"lkcmLbXdpU+OuZ4bI2n0RbOLJWcH1VpyUsyWA/DwQWr3srqHDuY1H1k12d9e6Nv16qWSMIhyB0oMzU0N9rXPLg==", "email"=>"", "password"=>"[FILTERED]", "name"=>"Sign In"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:43:01 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 28.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:43:28 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 164ms (Views: 154.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-3a216fc407da8ad91090844d918675d0ab9e9c17a3da64dec7458575518a9446.css?body=1" for ::1 at 2016-04-08 21:43:29 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:43:29 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:43:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:43:29 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:43:29 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:43:39 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 132ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:43:39 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:43:39 -0700
+
+
+Started GET "/assets/landing.self-c65c13c23a0ae407bf6195d88f8089041561d46c4437292b94189b94a1bcd3a6.css?body=1" for ::1 at 2016-04-08 21:43:39 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:43:39 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:43:39 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:44:26 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 107ms (Views: 106.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:44:26 -0700
+
+
+Started GET "/assets/landing.self-b6ebdde74476fd7d747ca32543c46de2146f689f24ef390edbf77b20a3e46da9.css?body=1" for ::1 at 2016-04-08 21:44:26 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:44:26 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:44:26 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:44:26 -0700
+
+
+Started GET "/" for ::1 at 2016-04-08 21:45:04 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 116ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-682567bcbc38290ac27a9723e31c846a7168acefc01cb03bc8b6a6ffe62a4eeb.css?body=1" for ::1 at 2016-04-08 21:45:05 -0700
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-08 21:45:05 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-08 21:45:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-04-08 21:45:05 -0700
+
+
+Started GET "/assets/application.self-344615e77e7372b49a7ad73a22ac8baf9e8ca41fd524078735fc06ca6aa0710d.js?body=1" for ::1 at 2016-04-08 21:45:05 -0700
+
+
+Started POST "/signup" for ::1 at 2016-04-08 21:45:24 -0700
+Processing by LandingController#signup as HTML
+  Parameters: {"authenticity_token"=>"/VHxg8/lXMZ608raHTeBMqWoialpXH3HOHYHjUvx916cpG0pdN7Mlq1fjR5gtq6C/IY+/ub7IP9md9yDTbR5Gg==", "code"=>"", "submit"=>"Sign Up"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:45:24 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for ::1 at 2016-04-08 21:45:25 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"vQ/IFui9zmXFOpte/S1rslYGoIH+N5Ein8M7C6qqMP/c+lS8U4ZeNRK23JqArEQCDygX1nGQzBrBwuAFrO++uw==", "email"=>"", "password"=>"[FILTERED]", "name"=>"Sign In"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:45:25 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-08 21:45:26 -0700
+Processing by LandingController#signup as HTML
+  Parameters: {"authenticity_token"=>"te3PjEMmoM8sKKVQz5uOkL3GDc9dMw8r/1dqDgr+HcDUGFMm+B0wn/uk4pSyGqEg5Oi6mNKUUhOhVrEADLuThA==", "code"=>"", "submit"=>"Sign Up"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:45:26 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 31ms (Views: 30.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signin" for ::1 at 2016-04-08 21:45:27 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"wj5vK2ck4wugCWy01FeYLseLF+YdHsXT3jNvHTOnd/Kjy/OB3B9zW3eFK3Cp1reenqWgsZK5mOuAMrQTNeL5tg==", "email"=>"", "password"=>"[FILTERED]", "name"=>"Sign In"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:45:27 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-08 21:45:27 -0700
+Processing by LandingController#signup as HTML
+  Parameters: {"authenticity_token"=>"TpAUgljBvwPx3WtStJDq8kkxT4a61USdD1uT6rYUPYsvZYgo4/ovUyZRLJbJEcVCEB/40TVyGaVRWkjksFGzzw==", "code"=>"", "submit"=>"Sign Up"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-08 21:45:27 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
