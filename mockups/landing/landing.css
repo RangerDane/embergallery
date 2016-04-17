@@ -1,0 +1,107 @@
+@keyframes swiveltoright {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(15deg); } }
+@keyframes swiveltoleft {
+  from {
+    transform: rotateY(0deg); }
+  to {
+    transform: rotateY(-15deg); } }
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+div {
+  box-sizing: border-box; }
+
+div#container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: #033649; }
+  header h1 {
+    flex: 1 0 auto;
+    font-size: 3vw;
+    margin: 2vw;
+    padding: 0;
+    color: white; }
+  header nav {
+    margin: 2vw; }
+    header nav form {
+      color: white; }
+      header nav form label {
+        font-size: 1vw;
+        margin-left: 1vw; }
+      header nav form input {
+        font-size: 1vw;
+        background: rgba(1, 1, 1, 0.25);
+        padding: 0.5vw;
+        border: 0px;
+        color: white; }
+      header nav form input.button {
+        padding: 0.5vw 1vw;
+        margin-left: 1vw; }
+
+div.slice {
+  max-width: 100%;
+  display: flex;
+  padding: 4vw;
+  font-size: 1.25vw;
+  justify-content: center; }
+  div.slice div.left, div.slice div.right {
+    flex: 1 0 auto;
+    margin: 1vw;
+    padding: 1vw;
+    max-width: 40vw;
+    perspective: 1000px; }
+    div.slice div.left h1, div.slice div.right h1 {
+      font-size: 2.5vw; }
+    div.slice div.left img, div.slice div.right img {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 0.25vw 1vw rgba(0, 0, 0, 0.5); }
+  div.slice div.left img {
+    transform: rotateY(15deg);
+    animation: 3s swiveltoright; }
+  div.slice div.right img {
+    transform: rotateY(-15deg);
+    animation: 3s swiveltoleft; }
+
+div.slice:nth-child(odd) {
+  background-color: #033649;
+  color: white; }
+
+div.slice:nth-child(even) {
+  background-color: white;
+  color: #033649; }
+
+footer {
+  background-color: #033649;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 1vw;
+  font-size: 1.25vw; }
+  footer div {
+    flex: 1 0 auto;
+    padding: 1vw;
+    margin: 1vw;
+    max-width: 20vw; }
+    footer div h1 {
+      font-size: 1.5vw;
+      margin: 0 0 1vw 0; }
+    footer div ul {
+      padding: 0; }
+      footer div ul li {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+
+/*# sourceMappingURL=landing.css.map */

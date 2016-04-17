@@ -1,39 +1,85 @@
-<div class="landing">
-  <div class="left">
-    <div class="floater">
-      <h1>Ember Gallery</h1>
+<div id="container">
+  <header>
+    <h1>Ember Gallery</h1>
+    <nav>
+      <div class="error"><%= flash[:signin] %></div>
+      <form class="signin" action="signin" method="post">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <label for="email">email:</label>
+        <input type="text" name="user[email]" id="email">
+        <label for="password">password:</label>
+        <input type="password" name="user[password]" id="password">
+        <input class="button" type="submit" name="name" value="sign in">
+      </form>
+    </nav>
+  </header>
+  <div class="slice">
+    <div class="left">
+      <img src="/assets/screenshots/doot.png" alt="Screenshot of a sample gallery" />
+    </div>
+    <div class="right">
+      <h1>Showcase your life's work</h1>
       <p>
-        Have an invite?
+        Built to be simple. Create a beautiful, elegant gallery to
+        show your work. Put your featured photos front and center, and
+        organize your work by series. Create pages for artist statements,
+        events, and more.
       </p>
-      <form class="" action="signup" method="post">
-        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-        <span>
-          <label for="code">
-            enter code:
-          </label>
-          <input type="text" name="code" value="">
-        </span>
-        <input type="submit" name="submit" value="Sign Up" class="button">
-      </form>
-      <p><%= flash.now[:signup] %></p>
     </div>
   </div>
-  <div class="right">
-    <div class="floater">
-      <h1>Already a user?</h1>
-      <form class="" action="signin" method="post">
-        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-        <span>
-          <label for="email">email:</label>
-          <input type="text" name="email" id="email" value="">
-        </span>
-        <span>
-          <label for="password">password:</label>
-          <input type="password" name="password" id="email" value="">
-        </span>
-        <input type="submit" name="name" value="Sign In" class="button">
-      </form>
-      <p><%= flash.now[:signin] %></p>
+  <div class="slice">
+    <div class="left">
+      <h1>Make Pretty Websites</h1>
+      <p>
+        And pretend to be a legitimate professional
+      </p>
+    </div>
+    <div class="right">
+      <img src="/assets/screenshots/doot.png" alt="just the same image" />
     </div>
   </div>
+  <div class="slice">
+    <div class="left">
+      <img src="/assets/screenshots/nodeweb.png" alt="a cool picture of pretty colored lines" />
+    </div>
+    <div class="right">
+      <h1>This App is Literally</h1>
+      <p>
+        Still in production. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <h1>Menu</h1>
+      <ul>
+        <li>Stuff</li>
+        <li>Things</li>
+        <li>We're Hiring!</li>
+        <li>Sorry, just kidding :(</li>
+      </ul>
+    </div>
+    <div>
+      <h1>Another Menu</h1>
+      <ul>
+        <li>Cool!</li>
+        <li>All right!</li>
+        <li>Check it!</li>
+      </ul>
+    </div>
+    <div>
+      <h1>OK!</h1>
+      <ul>
+        <li>Sweet!</li>
+        <li>Cool beans!</li>
+      </ul>
+    </div>
+  </footer>
 </div>

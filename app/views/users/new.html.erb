@@ -1,0 +1,10 @@
+<form class="" action="signup" method="post">
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <span>
+    <label for="code">
+      enter code:
+    </label>
+    <input type="text" name="user[invite_code]" value="<%= @code %>">
+  </span>
+  <input type="submit" name="submit" value="Sign Up" class="button">
+</form>

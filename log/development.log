@@ -14998,3 +14998,3462 @@ Migrating to Addcolumnstoinvites (20160417011029)
             FROM sqlite_temp_master
             WHERE name='index_invites_on_giver_id' AND type='index'
 
+
+
+Started GET "/" for ::1 at 2016-04-16 20:49:37 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160417033524)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (6.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160417033524"]]
+  [1m[36m (24.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSessions (20160417033606)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "token" varchar, "user_id" integer, "ip_address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160417033606"]]
+  [1m[36m (17.4ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSeries (20160417034655)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mCREATE TABLE "series" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160417034655"]]
+  [1m[36m (18.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-04-16 20:52:39 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 351ms (Views: 349.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-16 20:52:40 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-16 20:52:40 -0700
+
+
+Started GET "/assets/landing.self-dae9758494e25682dc1b47f5197bb85c7e2ba5159e44e4eb02c94d93577f72db.css?body=1" for ::1 at 2016-04-16 20:52:40 -0700
+
+
+Started GET "/assets/application.self-f651b3c845cdcfc11b75f0307caf68c5203620bbd3c5c8653da665cb8f191ca3.js?body=1" for ::1 at 2016-04-16 20:52:40 -0700
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:52:43 -0700
+
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  actionpack (4.2.5.1) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.5.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5.1) lib/action_dispatch/routing/route_set.rb:815:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (85.9ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:52:55 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"c73UsiySJLYeOUe0Y6yCId9NMvzvrXPwWbuJh2vczQlYluCytHSgFKUKWRTWRg9PYaQTz8v0wtBqVCMS3Rr4qQ==", "user"=>{"invite_code"=>""}, "submit"=>"Sign Up"}
+  [1m[36mInvite Load (1.4ms)[0m  [1mSELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1[0m  [["code", ""]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 29ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-16 20:52:55 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 33ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-16 20:52:55 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-16 20:52:55 -0700
+
+
+Started GET "/assets/landing.self-dae9758494e25682dc1b47f5197bb85c7e2ba5159e44e4eb02c94d93577f72db.css?body=1" for ::1 at 2016-04-16 20:52:55 -0700
+
+
+Started GET "/assets/application.self-f651b3c845cdcfc11b75f0307caf68c5203620bbd3c5c8653da665cb8f191ca3.js?body=1" for ::1 at 2016-04-16 20:52:55 -0700
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:52:57 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"/p496OTap4T6HNjwP5lipFZbImKl5Wf5mJJjuCT6T8bVtQnofDwjJkEvxlCKc+/K6LIDUYG81tmrfcktkjx6Zg==", "user"=>{"invite_code"=>""}, "submit"=>"Sign Up"}
+  [1m[35mInvite Load (0.2ms)[0m  SELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1  [["code", ""]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-16 20:52:57 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.6ms)[0m  INSERT INTO "invites" ("code", "created_at", "updated_at") VALUES (?, ?, ?)  [["code", "hello"], ["created_at", "2016-04-17 03:53:10.470834"], ["updated_at", "2016-04-17 03:53:10.470834"]]
+  [1m[36m (24.5ms)[0m  [1mcommit transaction[0m
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:53:17 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"UbUsZ5+0o30/VXvBfYMXMiqokgB30LwscS/NHLx91ch6nhhnB1In34RmZWHIaZpclEGzM1OJDQxCwGeJCrvgaA==", "user"=>{"invite_code"=>"hello"}, "submit"=>"Sign Up"}
+  [1m[36mInvite Load (1.4ms)[0m  [1mSELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1[0m  [["code", "hello"]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.9ms)
+
+ActionView::MissingTemplate (Missing template users/signup, application/signup with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder]}. Searched in:
+  * "/home/msg/embergallery/app/views"
+):
+  app/controllers/users_controller.rb:6:in `new'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (69.3ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.5ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:55:48 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"UbUsZ5+0o30/VXvBfYMXMiqokgB30LwscS/NHLx91ch6nhhnB1In34RmZWHIaZpclEGzM1OJDQxCwGeJCrvgaA==", "user"=>{"invite_code"=>"hello"}, "submit"=>"Sign Up"}
+  [1m[35mInvite Load (0.2ms)[0m  SELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1  [["code", "hello"]]
+  Rendered users/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 30ms (Views: 18.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-9aae08c69afbc2e796ae71cd24be4fc28c4dc5afeaf9a03c5c7411ff43f4d999.css?body=1" for ::1 at 2016-04-16 20:55:48 -0700
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-16 20:55:48 -0700
+
+
+Started GET "/assets/application.self-f651b3c845cdcfc11b75f0307caf68c5203620bbd3c5c8653da665cb8f191ca3.js?body=1" for ::1 at 2016-04-16 20:55:48 -0700
+
+
+Started GET "/assets/landing.self-dae9758494e25682dc1b47f5197bb85c7e2ba5159e44e4eb02c94d93577f72db.css?body=1" for ::1 at 2016-04-16 20:55:48 -0700
+
+
+Started GET "/" for ::1 at 2016-04-16 20:55:53 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 20ms (Views: 19.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:55:54 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"TFAwFfwj2BbjxRd4jmiHCBdY4YKIfrVUHy0byQPGsWdnewQVZMVctFj2Cdg7ggpmqbHAsawnBHQswrFctQCExw==", "user"=>{"invite_code"=>""}, "submit"=>"Sign Up"}
+  [1m[36mInvite Load (0.2ms)[0m  [1mSELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1[0m  [["code", ""]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-04-16 20:55:54 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:55:56 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"DFieEXoa0OiNiMuIsP26cJ6gCFQYbkX9wU1W7veQnSsnc6oR4vxUSja71SgFFzceIEkpZzw39N3yovx7QVaoiw==", "user"=>{"invite_code"=>"hello"}, "submit"=>"Sign Up"}
+  [1m[35mInvite Load (0.2ms)[0m  SELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1  [["code", "hello"]]
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:56:00 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"QBIYc9DS3nWta7Q21JIVaXVcfj/DTkGmrDPjGqIpJltrOSxzSDRa1xZYqpZheJgHy7VfDOcX8Iaf3EmPFO8T+w==", "user"=>{"invite_code"=>"hello"}, "submit"=>"Sign Up"}
+  [1m[36mInvite Load (0.2ms)[0m  [1mSELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1[0m  [["code", "hello"]]
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 13.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-16 20:56:01 -0700
+Processing by UsersController#new as HTML
+  Parameters: {"authenticity_token"=>"RTtXuJ5KXHLPVjt6JvWkF1j0aFTuAcK1eieS2IzWrHxuEGO4BqzY0HRlJdqTHyl55h1JZ8pYc5VJyDhNOhCZ3A==", "user"=>{"invite_code"=>"hello"}, "submit"=>"Sign Up"}
+  [1m[35mInvite Load (0.2ms)[0m  SELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1  [["code", "hello"]]
+  Rendered users/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 18ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSeries (20160417034655)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (26.4ms)[0m  DROP TABLE "series"
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160417034655"]]
+  [1m[35m (25.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateSessions (20160417033606)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.6ms)[0m  DROP TABLE "sessions"
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160417033606"]]
+  [1m[35m (26.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20160417033524)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  DROP TABLE "users"
+  [1m[36mSQL (0.6ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20160417033524"]]
+  [1m[35m (22.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2016-04-17 01:39:21 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (10.7ms)
+Completed 500 Internal Server Error in 328ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (Asset was not declared to be precompiled in production.
+Add `Rails.application.config.assets.precompile += %w( landing.css )` to `config/initializers/assets.rb` and restart your server):
+    3: <head>
+    4:   <title>Ember Gallery</title>
+    5:   <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+    6:   <%= stylesheet_link_tag    'landing', media: 'all'%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/landing.html.erb:6:in `_app_views_layouts_landing_html_erb___4530365289973535876_69918345496760'
+  app/controllers/landing_controller.rb:3:in `index'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.3ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (37.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (79.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:40:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.5.1) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.5.1) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (42.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (86.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20160417033524)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160417033524"]]
+  [1m[36m (22.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSessions (20160417033606)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.7ms)[0m  [1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "token" varchar, "user_id" integer, "ip_address" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160417033606"]]
+  [1m[36m (16.3ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSeries (20160417034655)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.2ms)[0m  [1mCREATE TABLE "series" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160417034655"]]
+  [1m[36m (21.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_galleries_on_subdomain' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_invites_on_giver_id' AND type='index'
+
+
+
+Started GET "/" for ::1 at 2016-04-17 01:40:22 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (17.8ms)
+Completed 200 OK in 285ms (Views: 285.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4a370f60b7fabf488b6c3e6ee0feded2f455e37c1e52c05aed6a8701f5c365f7.css?body=1" for ::1 at 2016-04-17 01:40:22 -0700
+
+
+Started GET "/doot.png" for ::1 at 2016-04-17 01:40:22 -0700
+
+ActionController::RoutingError (No route matches [GET] "/doot.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (18.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (40.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (74.6ms)
+
+
+Started GET "/screenshot.png" for ::1 at 2016-04-17 01:40:23 -0700
+
+ActionController::RoutingError (No route matches [GET] "/screenshot.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (28.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (56.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:41:25 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.2ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/doot.png" for ::1 at 2016-04-17 01:41:25 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/doot.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (38.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (34.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (67.3ms)
+
+
+Started GET "/assets/landing.self-4a370f60b7fabf488b6c3e6ee0feded2f455e37c1e52c05aed6a8701f5c365f7.css?body=1" for ::1 at 2016-04-17 01:41:25 -0700
+
+
+Started GET "/assets/nodeweb.png" for ::1 at 2016-04-17 01:41:25 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/nodeweb.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (2.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (35.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (3.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (73.7ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:41:26 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.5ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4a370f60b7fabf488b6c3e6ee0feded2f455e37c1e52c05aed6a8701f5c365f7.css?body=1" for ::1 at 2016-04-17 01:41:26 -0700
+
+
+Started GET "/assets/doot.png" for ::1 at 2016-04-17 01:41:26 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/doot.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (55.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.3ms)
+
+
+Started GET "/assets/nodeweb.png" for ::1 at 2016-04-17 01:41:26 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/nodeweb.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (29.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (61.9ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:41:28 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4a370f60b7fabf488b6c3e6ee0feded2f455e37c1e52c05aed6a8701f5c365f7.css?body=1" for ::1 at 2016-04-17 01:41:28 -0700
+
+
+Started GET "/assets/doot.png" for ::1 at 2016-04-17 01:41:28 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/doot.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (55.9ms)
+
+
+Started GET "/assets/nodeweb.png" for ::1 at 2016-04-17 01:41:28 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/nodeweb.png"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (57.8ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (31.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (63.1ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:41:50 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.9ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:41:50 -0700
+
+
+Started GET "/assets/landing.self-4a370f60b7fabf488b6c3e6ee0feded2f455e37c1e52c05aed6a8701f5c365f7.css?body=1" for ::1 at 2016-04-17 01:41:50 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:41:50 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:41:57 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"I+o8XxsVVAMR6KI3XaIm+Di/oQhuZif/uF3b03497ZkIwQhfg/PQoarbvJfoSKuWhlaAO0o/lt+LsnFGyPvYOQ==", "user"=>{"email"=>"asdf", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:41:57 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:41:57 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:41:57 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:42:13 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"f/5Uh3JQ2WaECZK6uoTxv4DHTaWZ+wDCpt0OmX9ldUxU1WCH6rZdxD86jBoPbnzRPi5slr2iseKVMqQMyaNA7A==", "user"=>{"email"=>"asdf", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:42:13 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:42:14 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:42:14 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:42:38 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (39.4ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/msg/embergallery/app/views/landing/main.html.erb:8: unknown regexp options - labl
+unmatched close parenthesis: /span>
+      <form class="signin" action="signin" method="post">
+        <input name="authenticity_token" value="<%= form_authenticity_token );@output_buffer.safe_append='" type="hidden">
+        <label for="email">email:</
+/home/msg/embergallery/app/views/landing/main.html.erb:9: syntax error, unexpected '<'
+        <input type="text" name="user[email]" id="email">
+         ^
+/home/msg/embergallery/app/views/landing/main.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+        <input type="text" name="user[email]" id="email">
+                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+        <input type="text" name="user[email]" id="email">
+                                                ^
+/home/msg/embergallery/app/views/landing/main.html.erb:10: syntax error, unexpected '<'
+        <label for="password">password:</label>
+         ^
+/home/msg/embergallery/app/views/landing/main.html.erb:10: syntax error, unexpected tLABEL
+        <label for="password">password:</label>
+                                       ^
+/home/msg/embergallery/app/views/landing/main.html.erb:13: unknown regexp options - fr
+/home/msg/embergallery/app/views/landing/main.html.erb:14: syntax error, unexpected '<'
+    </nav>
+     ^
+/home/msg/embergallery/app/views/landing/main.html.erb:15: unknown regexp options - hadr
+/home/msg/embergallery/app/views/landing/main.html.erb:16: syntax error, unexpected '<'
+  <div class="slice">
+   ^
+/home/msg/embergallery/app/views/landing/main.html.erb:17: syntax error, unexpected '<'
+    <div class="left">
+     ^
+/home/msg/embergallery/app/views/landing/main.html.erb:18: syntax error, unexpected '<'
+      <img src="/assets/screenshots/...
+       ^
+/home/msg/embergallery/app/views/landing/main.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...ssets/screenshots/doot.png" alt="Screenshot of a sample gall...
+...                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:18: syntax error, unexpected '>'
+/home/msg/embergallery/app/views/landing/main.html.erb:21: unknown regexp option - h
+/home/msg/embergallery/app/views/landing/main.html.erb:21: syntax error, unexpected tINTEGER, expecting ')'
+      <h1>Showcase your life\'s work</h1>
+                                        ^
+/home/msg/embergallery/app/views/landing/main.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+        Built to be simple. Create a beautiful, elegant gallery to
+                ^
+/home/msg/embergallery/app/views/landing/main.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+        Built to be simple. Create a beautiful, elegant gallery to
+                                                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:24: syntax error, unexpected ',', expecting ')'
+        show your work. Put your featured photos front and center, and
+                                                                  ^
+/home/msg/embergallery/app/views/landing/main.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...ate pages for artist statements,
+...                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:26: syntax error, unexpected keyword_and, expecting '='
+        events, and more.
+                   ^
+/home/msg/embergallery/app/views/landing/main.html.erb:28: syntax error, unexpected '<'
+    </div>
+     ^
+/home/msg/embergallery/app/views/landing/main.html.erb:29: unknown regexp options - dv
+/home/msg/embergallery/app/views/landing/main.html.erb:30: syntax error, unexpected '<'
+  <div class="slice">
+   ^
+/home/msg/embergallery/app/views/landing/main.html.erb:31: syntax error, unexpected '<'
+    <div class="left">
+     ^
+/home/msg/embergallery/app/views/landing/main.html.erb:32: syntax error, unexpected '<'
+      <h1>Make Pretty Websites</h1>
+       ^
+/home/msg/embergallery/app/views/landing/main.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+      <h1>Make Pretty Websites</h1>
+                     ^
+/home/msg/embergallery/app/views/landing/main.html.erb:35: unknown regexp option - p
+/home/msg/embergallery/app/views/landing/main.html.erb:36: syntax error, unexpected '<'
+    </div>
+     ^
+/home/msg/embergallery/app/views/landing/main.html.erb:38: unknown regexp options - at
+/home/msg/embergallery/app/views/landing/main.html.erb:38: syntax error, unexpected tSTRING_BEG, expecting ')'
+...="/assets/screenshots/doot.png" alt="just the same image" />
+...                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:38: syntax error, unexpected tIDENTIFIER, expecting ')'
+...screenshots/doot.png" alt="just the same image" />
+...                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+  <div class="slice">
+                   ^
+/home/msg/embergallery/app/views/landing/main.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <div class="left">
+                    ^
+/home/msg/embergallery/app/views/landing/main.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+...assets/screenshots/nodeweb.png" alt="a cool picture of prett...
+...                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+...screenshots/nodeweb.png" alt="a cool picture of pretty color...
+...                               ^
+/home/msg/embergallery/app/views/landing/main.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+    <div class="right">
+                     ^
+/home/msg/embergallery/app/views/landing/main.html.erb:45: unterminated string meets end of file
+/home/msg/embergallery/app/views/landing/main.html.erb:45: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/landing/main.html.erb:8: unknown regexp options - labl
+  app/views/landing/main.html.erb:9: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:9: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:10: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:10: syntax error, unexpected tLABEL
+  app/views/landing/main.html.erb:13: unknown regexp options - fr
+  app/views/landing/main.html.erb:14: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:15: unknown regexp options - hadr
+  app/views/landing/main.html.erb:16: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:17: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:18: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:18: syntax error, unexpected '>'
+  app/views/landing/main.html.erb:21: unknown regexp option - h
+  app/views/landing/main.html.erb:21: syntax error, unexpected tINTEGER, expecting ')'
+  app/views/landing/main.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/landing/main.html.erb:23: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/landing/main.html.erb:24: syntax error, unexpected ',', expecting ')'
+  app/views/landing/main.html.erb:25: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+  app/views/landing/main.html.erb:26: syntax error, unexpected keyword_and, expecting '='
+  app/views/landing/main.html.erb:28: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:29: unknown regexp options - dv
+  app/views/landing/main.html.erb:30: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:31: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:32: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:32: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+  app/views/landing/main.html.erb:35: unknown regexp option - p
+  app/views/landing/main.html.erb:36: syntax error, unexpected '<'
+  app/views/landing/main.html.erb:38: unknown regexp options - at
+  app/views/landing/main.html.erb:38: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/landing/main.html.erb:38: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+  app/views/landing/main.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+  app/views/landing/main.html.erb:45: unterminated string meets end of file
+  app/views/landing/main.html.erb:45: syntax error, unexpected end-of-input, expecting ')'
+  app/controllers/landing_controller.rb:3:in `index'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (58.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (27.6ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (58.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:42:49 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.2ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4a370f60b7fabf488b6c3e6ee0feded2f455e37c1e52c05aed6a8701f5c365f7.css?body=1" for ::1 at 2016-04-17 01:42:49 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:42:49 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:42:49 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:42:55 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"KrEgeG8a/rU4Uc3dfOpgJyFWiHpfAEwpE06Fd2pvKGUBmhR49/x6F4Ni033JAO1Jn7+pSXtZ/QkgoS/i3KkdxQ==", "user"=>{"email"=>"asdfasdf", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:42:55 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:42:55 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:42:55 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:04 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.9ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4a370f60b7fabf488b6c3e6ee0feded2f455e37c1e52c05aed6a8701f5c365f7.css?body=1" for ::1 at 2016-04-17 01:43:04 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:04 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:04 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:07 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:07 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:07 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:09 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:10 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:10 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:43:17 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"9jp0K64VYfjYjBsA3sKgbuPNyEbD6W0/p9wZJTYhJx3dEUArNvPlWmO/BaBrKC0AXSTpdeew3B+UM7OwgOcSvQ==", "user"=>{"email"=>"sdf", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:17 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.5ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:17 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:17 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:39 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.5ms)
+Completed 200 OK in 83ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6eb83207ffd02ba6b2df16722080c9195937933cdd186439c1d280750fe1b9d9.css?body=1" for ::1 at 2016-04-17 01:43:40 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:40 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:40 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:40 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:40 -0700
+
+
+Started GET "/assets/landing.self-6eb83207ffd02ba6b2df16722080c9195937933cdd186439c1d280750fe1b9d9.css?body=1" for ::1 at 2016-04-17 01:43:40 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:40 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:43:42 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"MFvbCNJzpEksdbeaiCilCYDMncoPvGbOy6vitaFqhwAbcO8ISpUg65dGqTo9wihnPiW8+Svl1+74REggF6yyoA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:42 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:42 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:42 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:52 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.2ms)
+Completed 200 OK in 72ms (Views: 71.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-128601c944ad71fb7d4637c87d0fbd60256bb9e9b545557c3c65bb5b2eee85de.css?body=1" for ::1 at 2016-04-17 01:43:53 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:53 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:53 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:43:54 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"XgdUcCQfoJ3MRzPrriIrVydyahqkR9tVE9GNaOq75091LGBwvPkkP3d0LUsbyKY5mZtLKYAeanUgPif9XH3S7w==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:54 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:54 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:55 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:56 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-128601c944ad71fb7d4637c87d0fbd60256bb9e9b545557c3c65bb5b2eee85de.css?body=1" for ::1 at 2016-04-17 01:43:56 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:56 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:56 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:43:57 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"R57zr0D4XAdPtiZij99pVD39D/0SOvWKHWfAZEfxqp9stcev2B7YpfSFOMI6NeQ6gxQuzjZjRKouiGrx8TefPw==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:43:57 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:43:57 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:43:57 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:44:05 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 86ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-145d2ea0e77c75057a9168d8fea7e6b2cbbd1c24d79861733c76eb069b927ac8.css?body=1" for ::1 at 2016-04-17 01:44:06 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:44:06 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:44:06 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:44:07 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"xD6onKR/JOPceJ9kvXcvFnkXmkpxiJI27KZXvi/vfWrvFZycPJmgQWdLgcQInaJ4x/67eVXRIxbfSf0rmSlIyg==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:44:07 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:44:07 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:44:07 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:44:09 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-145d2ea0e77c75057a9168d8fea7e6b2cbbd1c24d79861733c76eb069b927ac8.css?body=1" for ::1 at 2016-04-17 01:44:09 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:44:09 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:44:09 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:44:10 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"9ShuydBpYHYGvhuKYrxDaS2m718Xl/Lw0Y4zVv6yBVneA1rJSI/k1L2NBSrXVs4Hk0/ObDPOQ9DiYZnDSHQw+Q==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:44:10 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 5ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:44:10 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:44:10 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:44:35 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.2ms)
+Completed 200 OK in 91ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-88b75051ee463eb197d1354b2818a32bfb1fb5b1881b8124b88450e54d88df0b.css?body=1" for ::1 at 2016-04-17 01:44:35 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:44:35 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:44:35 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:44:36 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-88b75051ee463eb197d1354b2818a32bfb1fb5b1881b8124b88450e54d88df0b.css?body=1" for ::1 at 2016-04-17 01:44:36 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:44:36 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:44:36 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:44:37 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"yzn4ICcb/yrcVJsDFhCZYFrROu0U8yR8ns/Md4+RP8bgEswgv/17iGdnhaOj+hQO5Dgb3jCqlVytIGbiOVcKZg==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:44:37 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.9ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:44:37 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:44:37 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:45:42 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (6.1ms)
+Completed 200 OK in 104ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-16abc3783334b0716c8db36f7c031a4f1aaa494be3537023575452f7d341adbc.css?body=1" for ::1 at 2016-04-17 01:45:42 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:45:42 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:45:42 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:45:43 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.4ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-16abc3783334b0716c8db36f7c031a4f1aaa494be3537023575452f7d341adbc.css?body=1" for ::1 at 2016-04-17 01:45:43 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:45:43 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:45:43 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:45:46 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"hhWsKpC/JlFCT79OHSA/ZUQAiBqy6f0SmHYFOzA80e2tPpgqCFmi8/l8oe6oyrIL+umpKZawTDKrma+uhvrkTQ==", "user"=>{"email"=>"asdf", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:45:46 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:45:46 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:45:46 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:45:59 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (12.5ms)
+Completed 200 OK in 18ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-16abc3783334b0716c8db36f7c031a4f1aaa494be3537023575452f7d341adbc.css?body=1" for ::1 at 2016-04-17 01:45:59 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:45:59 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:45:59 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:46:01 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"xbK37vQcdmJFVdhN6ejGvuDk1fYvtG4f6pKxXipTN0LumYPubPrywP5mxu1cAkvQXg30xQvt3z/ZfRvLnJUC4g==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:01 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:01 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:01 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:05 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-16abc3783334b0716c8db36f7c031a4f1aaa494be3537023575452f7d341adbc.css?body=1" for ::1 at 2016-04-17 01:46:05 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:05 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:05 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:16 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 91ms (Views: 90.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4ef87855590c59d1ec5306b007bb25bcc2e5d63da252b0d6b75eaa744b3f775f.css?body=1" for ::1 at 2016-04-17 01:46:16 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:16 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:16 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:46:18 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"yMpZkRroA/xahLDifAk1crwHjviszLOPgx4/rIAuJdDj4W2Rgg6HXuG3rkLJ47gcAu6vy4iVAq+w8ZU5NugQcA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:18 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.5ms)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:18 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:18 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:26 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.5ms)
+Completed 200 OK in 88ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-d3453201da838dc106a70e936474f8a4eab2e99324e2345dd416dc86eda329bc.css?body=1" for ::1 at 2016-04-17 01:46:27 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:27 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:27 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:46:28 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"YNIv4yPjwunXeCJ4Fndy9iwFyvfXbVnR2gmaxf4zddhL+RvjuwVGS2xLPNijnf+YkuzrxPM06PHp5jBQSPVAeA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:28 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:28 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:28 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:30 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.2ms)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-d3453201da838dc106a70e936474f8a4eab2e99324e2345dd416dc86eda329bc.css?body=1" for ::1 at 2016-04-17 01:46:30 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:30 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:30 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:38 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-5e3aed6f6453862372e06eb6a3e597f160632aec7b367ba72558474d2c589c9c.css?body=1" for ::1 at 2016-04-17 01:46:38 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:38 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:38 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 01:46:40 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"D2A6Bq6VRpYFsw9WJ76d/HPnYLNHkNTQZt/SPbiTcNgkSw4GNnPCNL6AEfaSVBCSzQ5BgGPJZfBVMHioDlVFeA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:40 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:40 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:40 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:46:42 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.2ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-5e3aed6f6453862372e06eb6a3e597f160632aec7b367ba72558474d2c589c9c.css?body=1" for ::1 at 2016-04-17 01:46:42 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:46:42 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:46:42 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:49:24 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 80ms (Views: 79.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1aebc1fdfd70848fb5a4a49995deaab1a44b4a46149867b98e98e029eaa7ed36.css?body=1" for ::1 at 2016-04-17 01:49:24 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:49:24 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:49:24 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:49:25 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.6ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1aebc1fdfd70848fb5a4a49995deaab1a44b4a46149867b98e98e029eaa7ed36.css?body=1" for ::1 at 2016-04-17 01:49:25 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:49:25 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:49:25 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:49:28 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1aebc1fdfd70848fb5a4a49995deaab1a44b4a46149867b98e98e029eaa7ed36.css?body=1" for ::1 at 2016-04-17 01:49:28 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:49:28 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:49:28 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:49:29 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1aebc1fdfd70848fb5a4a49995deaab1a44b4a46149867b98e98e029eaa7ed36.css?body=1" for ::1 at 2016-04-17 01:49:30 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:49:30 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:49:30 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:49:31 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 19ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1aebc1fdfd70848fb5a4a49995deaab1a44b4a46149867b98e98e029eaa7ed36.css?body=1" for ::1 at 2016-04-17 01:49:31 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:49:31 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:49:32 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:49:56 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 91ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-491bcb96da35390a3b33267d6068a61319c45865048c891460dd59c2a703497d.css?body=1" for ::1 at 2016-04-17 01:49:56 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:49:56 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:49:56 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:50:09 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 78ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-40a5dcc917468bec6555649e5965ff4b4b795794d566533376ec588751ba6ae5.css?body=1" for ::1 at 2016-04-17 01:50:10 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:50:10 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:50:10 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:50:11 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:50:11 -0700
+
+
+Started GET "/assets/landing.self-40a5dcc917468bec6555649e5965ff4b4b795794d566533376ec588751ba6ae5.css?body=1" for ::1 at 2016-04-17 01:50:11 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:50:11 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:50:22 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 73ms (Views: 72.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6e754f68fb23a1e5c20bc29829b3352df210d7ea45ff9fde391bf158a6de1153.css?body=1" for ::1 at 2016-04-17 01:50:22 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:50:22 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:50:22 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:50:23 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.2ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:50:23 -0700
+
+
+Started GET "/assets/landing.self-6e754f68fb23a1e5c20bc29829b3352df210d7ea45ff9fde391bf158a6de1153.css?body=1" for ::1 at 2016-04-17 01:50:23 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:50:23 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:50:30 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.8ms)
+Completed 200 OK in 75ms (Views: 74.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b0aba5c18be5e4395b9902e5cf281eec66a6a4154d902b824d3b14ab2e710c6b.css?body=1" for ::1 at 2016-04-17 01:50:30 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:50:30 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:50:30 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:50:56 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 89ms (Views: 88.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4c2d2223a7830e4c11df325d0012c167ac9415e3f37b30feb5fae9d52e31025d.css?body=1" for ::1 at 2016-04-17 01:50:56 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:50:56 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:50:56 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:06 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 86ms (Views: 85.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0c6dae67cf09fa1e21184c830dc5f8da767db3e5f8ad4b2b0eda02157de30dc0.css?body=1" for ::1 at 2016-04-17 01:51:07 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:07 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:07 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:07 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.4ms)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0c6dae67cf09fa1e21184c830dc5f8da767db3e5f8ad4b2b0eda02157de30dc0.css?body=1" for ::1 at 2016-04-17 01:51:07 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:07 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:07 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:10 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0c6dae67cf09fa1e21184c830dc5f8da767db3e5f8ad4b2b0eda02157de30dc0.css?body=1" for ::1 at 2016-04-17 01:51:10 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:10 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:10 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:23 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.0ms)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-491bcb96da35390a3b33267d6068a61319c45865048c891460dd59c2a703497d.css?body=1" for ::1 at 2016-04-17 01:51:23 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:23 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:23 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:34 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.2ms)
+Completed 200 OK in 79ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-9f8ebff5ade9bbc3f60610169573d190a9ac7d81b2402a8cde2cecde796fcb2e.css?body=1" for ::1 at 2016-04-17 01:51:34 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:34 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:34 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:35 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-9f8ebff5ade9bbc3f60610169573d190a9ac7d81b2402a8cde2cecde796fcb2e.css?body=1" for ::1 at 2016-04-17 01:51:35 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:35 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:35 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:45 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 78ms (Views: 75.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-08354bf405d435c1bb10ee60c4b80bc46a713a4649b0828e1e6a64279e534ff3.css?body=1" for ::1 at 2016-04-17 01:51:45 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:45 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:45 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:46 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-08354bf405d435c1bb10ee60c4b80bc46a713a4649b0828e1e6a64279e534ff3.css?body=1" for ::1 at 2016-04-17 01:51:46 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:46 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:46 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:51:57 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 82ms (Views: 81.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6b5284aa81a428cd745f56ea4c8d1183dab030a0d64c3cd0e629f3a70b052147.css?body=1" for ::1 at 2016-04-17 01:51:57 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:51:57 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:51:57 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:17 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 83ms (Views: 82.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-2b16a81344c04e31ef8cf5c8f65ad4e01bc1f0174a9a86cb51fd2306b675a6cb.css?body=1" for ::1 at 2016-04-17 01:52:17 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:17 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:17 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:30 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 79ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-d4222df35da39d1319e9dd5166240dab6d5d19967ee577c8b0f55e7e615b2350.css?body=1" for ::1 at 2016-04-17 01:52:30 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:30 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:30 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:31 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-d4222df35da39d1319e9dd5166240dab6d5d19967ee577c8b0f55e7e615b2350.css?body=1" for ::1 at 2016-04-17 01:52:31 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:31 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:31 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:40 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.6ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-e5aab9eb91eff2d43279179835eaf94d6a41ab61d9023e896059334b324e8188.css?body=1" for ::1 at 2016-04-17 01:52:40 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:40 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:40 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:41 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-e5aab9eb91eff2d43279179835eaf94d6a41ab61d9023e896059334b324e8188.css?body=1" for ::1 at 2016-04-17 01:52:41 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:41 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:41 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:48 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-e5aab9eb91eff2d43279179835eaf94d6a41ab61d9023e896059334b324e8188.css?body=1" for ::1 at 2016-04-17 01:52:48 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:48 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:48 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:49 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.8ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-e5aab9eb91eff2d43279179835eaf94d6a41ab61d9023e896059334b324e8188.css?body=1" for ::1 at 2016-04-17 01:52:49 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:49 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:49 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:52:56 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.7ms)
+Completed 200 OK in 79ms (Views: 78.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-f022ea5eb3ee3d2e64f3756875367735464abe828485a5222305ff3c5fe15a61.css?body=1" for ::1 at 2016-04-17 01:52:56 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:52:56 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:52:56 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:53:04 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 81ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6a77e35c68f14c0230b12eb117ba3c42b20f4768bedd0ed919e7b2cdf458c2f8.css?body=1" for ::1 at 2016-04-17 01:53:04 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:53:04 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:53:05 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:53:38 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 78ms (Views: 77.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6ce91a67faf14d3032bf9dc15beedf44304355c82ed4caac4f407b71e1419a31.css?body=1" for ::1 at 2016-04-17 01:53:38 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:53:38 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:53:38 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:53:46 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 79ms (Views: 78.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b88c51b7504372cdec99c1b90ab970b438b1c02accae8b7efd33e79fd85a3e22.css?body=1" for ::1 at 2016-04-17 01:53:46 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:53:46 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:53:46 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:54:04 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 95ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-921add6765d27e14865f4fad4b2d56285238719f750c54fc722990c188a56fc1.css?body=1" for ::1 at 2016-04-17 01:54:04 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:54:04 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:54:04 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:54:42 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.6ms)
+Completed 200 OK in 91ms (Views: 90.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6b9f45f67a87efa5d03299cb77447f61a03e8a7c079abb55666ada431a7dc7d9.css?body=1" for ::1 at 2016-04-17 01:54:42 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:54:42 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:54:42 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:54:50 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.9ms)
+Completed 200 OK in 84ms (Views: 83.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-2c2c041a975b1b9694bd6b9f75c76b454972044448b023b5656a9b9314b8e555.css?body=1" for ::1 at 2016-04-17 01:54:50 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:54:50 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:54:50 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:55:03 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.9ms)
+Completed 200 OK in 88ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b31ccdd1643daa31d215c8fe012f1b26ac272be2406428bd68ab29b69c2afadc.css?body=1" for ::1 at 2016-04-17 01:55:03 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:55:03 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:55:03 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:55:33 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.3ms)
+Completed 200 OK in 107ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-51fd69ef1af995791879da950a7f4851b0d32129058f7f77a47cf62ec6b1b97f.css?body=1" for ::1 at 2016-04-17 01:55:34 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:55:34 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:55:34 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:55:55 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.8ms)
+Completed 200 OK in 95ms (Views: 95.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-e20be7053bb4bf36dcd32a1458686a9e12baa4d7184064b611d54be689816beb.css?body=1" for ::1 at 2016-04-17 01:55:55 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:55:55 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:55:55 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:56:00 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-c49ad59cda6541a5c3e6996aa6342c8ab408a97fe2fcfc70d1ff08461d1011a9.css?body=1" for ::1 at 2016-04-17 01:56:01 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:56:01 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:56:01 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:56:14 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 86ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-82c984d713364e2729decd32ddbe0f1dfc591d6e76f60d9346283ef8c59652b0.css?body=1" for ::1 at 2016-04-17 01:56:14 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:56:14 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:56:14 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:56:39 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 86ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-112f98472fb6d55e24330a99fdf59f47b01fc3ceb0fbd7c45af7b959aed52504.css?body=1" for ::1 at 2016-04-17 01:56:39 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:56:39 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:56:39 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:57:24 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 88ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-44c556ebdc252c1ed38f171d17284c6bb5de26b0629acea4fb27d0ed33405e92.css?body=1" for ::1 at 2016-04-17 01:57:25 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:57:25 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:57:25 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:57:29 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:57:29 -0700
+
+
+Started GET "/assets/landing.self-44c556ebdc252c1ed38f171d17284c6bb5de26b0629acea4fb27d0ed33405e92.css?body=1" for ::1 at 2016-04-17 01:57:29 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:57:29 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:57:40 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.2ms)
+Completed 200 OK in 81ms (Views: 80.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-72748c49b99e3121d4abf4e2cd52e6b4d98789fc8a4d684cd3c53530929f459d.css?body=1" for ::1 at 2016-04-17 01:57:40 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:57:40 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:57:40 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:58:15 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 86ms (Views: 85.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-bfe33e43766f63025c9a34d53b3d10239266abe54761eb2a10beb58d31d9ecb2.css?body=1" for ::1 at 2016-04-17 01:58:15 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:58:15 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:58:16 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:58:54 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-d9e2f39d5328921ba83f1081fbdc9a25123f089c9ab8a74973c5b3c0c48d58e2.css?body=1" for ::1 at 2016-04-17 01:58:54 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:58:54 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:58:54 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:59:44 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 106ms (Views: 106.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-a00196ab9ea0546a386216c28e298fc4d8e26a04ce959fc7f5cd847864bc5f00.css?body=1" for ::1 at 2016-04-17 01:59:44 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:59:44 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:59:44 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 01:59:52 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-9bc8d549cb8b8773c0cf49c3609a60d17591c406f4f44ed5f2602d01457c3202.css?body=1" for ::1 at 2016-04-17 01:59:52 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 01:59:52 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 01:59:52 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:00:06 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 101ms (Views: 101.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-72447e6719bdd91c3cbed0ec05e4362dd9d8116fc84af2fec799ca6c74878609.css?body=1" for ::1 at 2016-04-17 02:00:07 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:00:07 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:00:07 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:00:24 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 101ms (Views: 100.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b01b0019d05852a44683b09a9cbe1de3b36970d367c5b27732daf9d57afd2831.css?body=1" for ::1 at 2016-04-17 02:00:24 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:00:24 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:00:24 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:00:25 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.8ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b01b0019d05852a44683b09a9cbe1de3b36970d367c5b27732daf9d57afd2831.css?body=1" for ::1 at 2016-04-17 02:00:25 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:00:25 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:00:25 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:00:29 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.4ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-72447e6719bdd91c3cbed0ec05e4362dd9d8116fc84af2fec799ca6c74878609.css?body=1" for ::1 at 2016-04-17 02:00:29 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:00:29 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:00:29 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:00:37 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b01b0019d05852a44683b09a9cbe1de3b36970d367c5b27732daf9d57afd2831.css?body=1" for ::1 at 2016-04-17 02:00:37 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:00:37 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:00:37 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:01:41 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 83ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-61e55c4c952ebcb74c5ff5dddae94235b8a64cd33ff4a6b640e4ac5127faab0d.css?body=1" for ::1 at 2016-04-17 02:01:41 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:01:41 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:01:41 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:01:56 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 85ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-e8b82dd48689c21c70351ed3d7a470a5d4e12ef099964be3428ed83f14af47c0.css?body=1" for ::1 at 2016-04-17 02:01:56 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:01:56 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:01:56 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:02:16 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-72e9131fa197e2bcabd4a85d48c34bf6214d2d8833cb4f0e9dd9ac70a1db4157.css?body=1" for ::1 at 2016-04-17 02:02:16 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:02:16 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:02:16 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:02:45 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 95ms (Views: 94.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0f84b82edd377f6fdf71ef63b1bcc691485c1a675c93bc4d8f2a8b82dd62689c.css?body=1" for ::1 at 2016-04-17 02:02:45 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:02:45 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:02:45 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:03:17 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 94ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-6a21c813d73d986898aa9da3e1253f60d6b4beacacea32f76cba552e3114662f.css?body=1" for ::1 at 2016-04-17 02:03:17 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:03:17 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:03:17 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:03:24 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.4ms)
+Completed 200 OK in 92ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-8b23cec9183d1e0f664fcbd69a261351b1d7b20f93ebe8d7c63880336333189a.css?body=1" for ::1 at 2016-04-17 02:03:24 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:03:24 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:03:24 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:03:37 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (12.4ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-8b23cec9183d1e0f664fcbd69a261351b1d7b20f93ebe8d7c63880336333189a.css?body=1" for ::1 at 2016-04-17 02:03:37 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:03:37 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:03:37 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:03:38 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-8b23cec9183d1e0f664fcbd69a261351b1d7b20f93ebe8d7c63880336333189a.css?body=1" for ::1 at 2016-04-17 02:03:38 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:03:38 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:03:38 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 02:03:41 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"KTn27A6Z3bzdzludwJ+oHGa8OAJV0QtgrZm/cR+1ap8CEsLsln9ZHmb9RT11dSVy2FUZMXGIukCedhXkqXNfPw==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 02:03:41 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:03:41 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:03:41 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:03:55 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-45162e24e6bfaf8e86faac65bfa24a190c44b40c9a7c74212d23a46aa9b8f50a.css?body=1" for ::1 at 2016-04-17 02:03:55 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:03:55 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:03:55 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:04:26 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 12ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0f84b82edd377f6fdf71ef63b1bcc691485c1a675c93bc4d8f2a8b82dd62689c.css?body=1" for ::1 at 2016-04-17 02:04:26 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:04:26 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:04:26 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:04:33 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.3ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0f84b82edd377f6fdf71ef63b1bcc691485c1a675c93bc4d8f2a8b82dd62689c.css?body=1" for ::1 at 2016-04-17 02:04:33 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:04:33 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:04:33 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 02:04:36 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"3ZRS3sqOGiepr7OZiUZHWZLHAOYXuBpp95/ouf3vaKv2v2beUmiehRKcrTk8rMo3LC4h1TPhq0nEcEIsSyldCw==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 02:04:36 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:04:36 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:04:36 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:05:20 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 9ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0f84b82edd377f6fdf71ef63b1bcc691485c1a675c93bc4d8f2a8b82dd62689c.css?body=1" for ::1 at 2016-04-17 02:05:20 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:05:20 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:05:20 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:05:22 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0f84b82edd377f6fdf71ef63b1bcc691485c1a675c93bc4d8f2a8b82dd62689c.css?body=1" for ::1 at 2016-04-17 02:05:22 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:05:22 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:05:22 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:06:06 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 104ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-603cc3a50c63e600dbdd4ee5863ab06ca7ddc3fd54150a6056f7ef5dffb72282.css?body=1" for ::1 at 2016-04-17 02:06:06 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:06:06 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:06:06 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:06:07 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.8ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-603cc3a50c63e600dbdd4ee5863ab06ca7ddc3fd54150a6056f7ef5dffb72282.css?body=1" for ::1 at 2016-04-17 02:06:07 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:06:07 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:06:07 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:06:15 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-88c38e042c1caa38349b21ae4cacea93034d0affb92506458ac163bb3e708b31.css?body=1" for ::1 at 2016-04-17 02:06:15 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:06:15 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:06:15 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:06:38 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.5ms)
+Completed 200 OK in 88ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1dae6168ea8dc19774c8b8d97c9be73c6ff0d479ac45c5112505654b94d022c9.css?body=1" for ::1 at 2016-04-17 02:06:39 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:06:39 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:06:39 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:06:44 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-c08bf705369308881409cb8e89495c6173abea98467eb38c081232dc2a2e5163.css?body=1" for ::1 at 2016-04-17 02:06:44 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:06:44 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:06:44 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:07:05 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.5ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-c08bf705369308881409cb8e89495c6173abea98467eb38c081232dc2a2e5163.css?body=1" for ::1 at 2016-04-17 02:07:05 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:07:05 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:07:05 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:07:05 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-c08bf705369308881409cb8e89495c6173abea98467eb38c081232dc2a2e5163.css?body=1" for ::1 at 2016-04-17 02:07:06 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:07:06 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:07:06 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:07:28 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 91ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-ed7435a21b7534deb968eceee265242d7f015ad191379d45a3b813a6b0769959.css?body=1" for ::1 at 2016-04-17 02:07:28 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:07:28 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:07:28 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:07:47 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 86ms (Views: 85.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:07:47 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:07:47 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:07:47 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:07:50 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:07:50 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:07:50 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:07:50 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:07:52 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:07:52 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:07:52 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:07:52 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:09:04 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:09:04 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:09:04 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:09:04 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:09:06 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 11ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:09:06 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:09:06 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:09:06 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:09:07 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:09:07 -0700
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:09:07 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:09:07 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:10:26 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 120ms (Views: 119.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-31caf25fd55fbc7c4c89c21128d36c5cd80f00dd0a780d99176f8b92e68c202e.css?body=1" for ::1 at 2016-04-17 02:10:26 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:10:26 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:10:26 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:10:34 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.4ms)
+Completed 200 OK in 118ms (Views: 117.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-044f98e049c0af8d895e7e5f6cf13e52a334f70089931ad1a2602d3f5c6556f3.css?body=1" for ::1 at 2016-04-17 02:10:34 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:10:34 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:10:34 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:10:58 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:10:58 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:10:58 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:10:58 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:11:30 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:11:30 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:11:30 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:11:30 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:11:33 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:11:33 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:11:33 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:11:33 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:11:43 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 85ms (Views: 84.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-dfda80510e942ac9f32f66697d460f2e3192d1b08ad55ec0965f23d6298bddd6.css?body=1" for ::1 at 2016-04-17 02:11:43 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:11:43 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:11:43 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:11:50 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.9ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-dfda80510e942ac9f32f66697d460f2e3192d1b08ad55ec0965f23d6298bddd6.css?body=1" for ::1 at 2016-04-17 02:11:51 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:11:51 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:11:51 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:12:01 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 90ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-a56a8eb4aa373cf1fd4c73f6cf325c98e0e7f1411ff7b6cb3778eb2786a9e8ae.css?body=1" for ::1 at 2016-04-17 02:12:01 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:12:01 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:12:01 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:12:06 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.4ms)
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-a56a8eb4aa373cf1fd4c73f6cf325c98e0e7f1411ff7b6cb3778eb2786a9e8ae.css?body=1" for ::1 at 2016-04-17 02:12:06 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:12:06 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:12:06 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:12:16 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-dfda80510e942ac9f32f66697d460f2e3192d1b08ad55ec0965f23d6298bddd6.css?body=1" for ::1 at 2016-04-17 02:12:16 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:12:16 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:12:16 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:12:18 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-dfda80510e942ac9f32f66697d460f2e3192d1b08ad55ec0965f23d6298bddd6.css?body=1" for ::1 at 2016-04-17 02:12:18 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:12:18 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:12:18 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 02:12:40 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"oUf4ab7WjRg8PHA7mpKU8iGF73vpJPnVfRp/MnkP0eiKbMxpJjAJuocPbpsveBmcn2zOSM19SPVO9dWnz8nkSA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 02:12:40 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:12:40 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:12:40 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:12:54 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (3.6ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-0a4d0caf5beb556a5fd75af834ccaa9c5c8f85fd1b089196da68f98910fd70c3.css?body=1" for ::1 at 2016-04-17 02:12:54 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:12:54 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:12:54 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:13:04 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 92ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1312b3b0730b2a6db44de5da754f53e498f2fae4ff4753443554b4c033f3e298.css?body=1" for ::1 at 2016-04-17 02:13:04 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:13:04 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:13:04 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:13:13 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1312b3b0730b2a6db44de5da754f53e498f2fae4ff4753443554b4c033f3e298.css?body=1" for ::1 at 2016-04-17 02:13:13 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:13:13 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:13:13 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:13:15 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1312b3b0730b2a6db44de5da754f53e498f2fae4ff4753443554b4c033f3e298.css?body=1" for ::1 at 2016-04-17 02:13:16 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:13:16 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:13:16 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:13:34 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.4ms)
+Completed 200 OK in 120ms (Views: 120.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-856223c1fe4b387dfd316f999315f65fa4fc1b3a6b7ae1afcd934fbb575a6569.css?body=1" for ::1 at 2016-04-17 02:13:34 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:13:34 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:13:34 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:13:53 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.1ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1312b3b0730b2a6db44de5da754f53e498f2fae4ff4753443554b4c033f3e298.css?body=1" for ::1 at 2016-04-17 02:13:53 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:13:53 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:13:54 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:14:00 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-1312b3b0730b2a6db44de5da754f53e498f2fae4ff4753443554b4c033f3e298.css?body=1" for ::1 at 2016-04-17 02:14:00 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:14:00 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:14:00 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:14:33 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 95ms (Views: 94.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-904c832f057905c7a12df31355a9fdd234dd6cba8444225161af424c8ab431d1.css?body=1" for ::1 at 2016-04-17 02:14:33 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:14:33 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:14:33 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:14:43 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 93ms (Views: 92.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:14:43 -0700
+
+
+Started GET "/assets/landing.self-50f4bd9b59fb996fa3ca40ff7f5ed343363f1b49e57165880d59f74172b59516.css?body=1" for ::1 at 2016-04-17 02:14:43 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:14:43 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:14:50 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 94ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-c49fcdd5309d3bf100bc2288c782cad210be0948a09c9b142542ab29f5eff43a.css?body=1" for ::1 at 2016-04-17 02:14:50 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:14:50 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:14:50 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:15:25 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 95ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4b822293819fd55c8077781929a16842730298d8467078bf10bdae8360db2b2d.css?body=1" for ::1 at 2016-04-17 02:15:25 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:15:25 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:15:25 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:15:29 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.5ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:15:29 -0700
+
+
+Started GET "/assets/landing.self-4b822293819fd55c8077781929a16842730298d8467078bf10bdae8360db2b2d.css?body=1" for ::1 at 2016-04-17 02:15:29 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:15:29 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:15:32 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.7ms)
+Completed 200 OK in 9ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4b822293819fd55c8077781929a16842730298d8467078bf10bdae8360db2b2d.css?body=1" for ::1 at 2016-04-17 02:15:32 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:15:32 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:15:32 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:15:36 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.3ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-4b822293819fd55c8077781929a16842730298d8467078bf10bdae8360db2b2d.css?body=1" for ::1 at 2016-04-17 02:15:36 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:15:36 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:15:36 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:15:45 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (2.5ms)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-08fde7f61d7c196891d051b44bd907f373d0b57f2456137f6a1b7bbe7eeabeac.css?body=1" for ::1 at 2016-04-17 02:15:45 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:15:45 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:15:45 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:15:49 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-08fde7f61d7c196891d051b44bd907f373d0b57f2456137f6a1b7bbe7eeabeac.css?body=1" for ::1 at 2016-04-17 02:15:49 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:15:49 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:15:49 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:15:52 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.8ms)
+Completed 200 OK in 10ms (Views: 10.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-08fde7f61d7c196891d051b44bd907f373d0b57f2456137f6a1b7bbe7eeabeac.css?body=1" for ::1 at 2016-04-17 02:15:52 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:15:52 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:15:52 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:16:14 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.0ms)
+Completed 200 OK in 93ms (Views: 92.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b1d4c79b747f2a05e9b2e3c0fc47909b54f0a0fbea1939b0f0c359b1291ed9b2.css?body=1" for ::1 at 2016-04-17 02:16:14 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:16:14 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:16:14 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:16:19 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.3ms)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b1d4c79b747f2a05e9b2e3c0fc47909b54f0a0fbea1939b0f0c359b1291ed9b2.css?body=1" for ::1 at 2016-04-17 02:16:19 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:16:19 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:16:19 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:16:31 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.7ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b1d4c79b747f2a05e9b2e3c0fc47909b54f0a0fbea1939b0f0c359b1291ed9b2.css?body=1" for ::1 at 2016-04-17 02:16:31 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:16:31 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:16:31 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:16:35 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (1.4ms)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b1d4c79b747f2a05e9b2e3c0fc47909b54f0a0fbea1939b0f0c359b1291ed9b2.css?body=1" for ::1 at 2016-04-17 02:16:35 -0700
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:16:35 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:16:35 -0700
+
+
+Started POST "/signin" for ::1 at 2016-04-17 02:16:48 -0700
+Processing by LandingController#signin as HTML
+  Parameters: {"authenticity_token"=>"g91TEhm3o6GuSHF/kR6g6b3mhgMC94ryMQlrJCokVsio9mcSgVEnAxV7b98k9C2HAw+nMCauO9IC5sGxnOJjaA==", "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"sign in"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-04-17 02:16:48 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.5ms)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:16:48 -0700
+
+
+Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:16:48 -0700

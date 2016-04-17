@@ -1,0 +1,39 @@
+<div class="landing">
+  <div class="left">
+    <div class="floater">
+      <h1>Ember Gallery</h1>
+      <p>
+        Have an invite?
+      </p>
+      <form class="" action="signup" method="post">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <span>
+          <label for="code">
+            enter code:
+          </label>
+          <input type="text" name="user[invite_code]" value="">
+        </span>
+        <input type="submit" name="submit" value="Sign Up" class="button">
+      </form>
+      <p><%= flash.now[:signup] %></p>
+    </div>
+  </div>
+  <div class="right">
+    <div class="floater">
+      <h1>Already a user?</h1>
+      <form class="" action="signin" method="post">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <span>
+          <label for="email">email:</label>
+          <input type="text" name="user[email]" id="email" value="">
+        </span>
+        <span>
+          <label for="password">password:</label>
+          <input type="password" name="user[password]" id="email" value="">
+        </span>
+        <input type="submit" name="name" value="Sign In" class="button">
+      </form>
+      <p><%= flash.now[:signin] %></p>
+    </div>
+  </div>
+</div>

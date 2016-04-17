@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: invites
+#
+#  id          :integer          not null, primary key
+#  code        :string
+#  email       :string
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  giver_id    :integer
+#  receiver_id :integer
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 # This model initially had no columns defined.  If you add columns to the

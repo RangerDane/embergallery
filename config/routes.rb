@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   match '/', to: 'landing#index', constraints: { subdomain: 'www' }, via: [:get, :post, :put, :patch, :delete]
   match '/', to: 'gallery#show', constraints: { subdomain: /.+/ }, via: [:get, :post, :put, :patch, :delete]
   get 'gallery/:subdomain', to: 'gallery#show'
-  post 'signup', to: 'landing#signup'
+  post 'signup', to: 'users#new'
   post 'signin', to: 'landing#signin'
 
   root to: 'landing#index'
