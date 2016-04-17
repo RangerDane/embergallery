@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20160409031945) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "galleries", force: :cascade do |t|
     t.string   "name"
     t.string   "subdomain"
@@ -24,7 +21,7 @@ ActiveRecord::Schema.define(version: 20160409031945) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "galleries", ["subdomain"], name: "index_galleries_on_subdomain", using: :btree
+  add_index "galleries", ["subdomain"], name: "index_galleries_on_subdomain"
 
   create_table "invites", force: :cascade do |t|
     t.string   "code"
