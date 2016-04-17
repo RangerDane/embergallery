@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160409031945) do
+ActiveRecord::Schema.define(version: 20160417011029) do
 
   create_table "galleries", force: :cascade do |t|
     t.string   "name"
@@ -26,8 +26,12 @@ ActiveRecord::Schema.define(version: 20160409031945) do
   create_table "invites", force: :cascade do |t|
     t.string   "code"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "giver_id"
+    t.integer  "receiver_id"
   end
+
+  add_index "invites", ["giver_id"], name: "index_invites_on_giver_id"
 
 end
