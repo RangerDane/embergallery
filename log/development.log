@@ -18457,3 +18457,21 @@ Started GET "/assets/screenshots/doot.png" for ::1 at 2016-04-17 02:16:48 -0700
 
 
 Started GET "/assets/screenshots/nodeweb.png" for ::1 at 2016-04-17 02:16:48 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:22:31 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (13.3ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b1d4c79b747f2a05e9b2e3c0fc47909b54f0a0fbea1939b0f0c359b1291ed9b2.css?body=1" for ::1 at 2016-04-17 02:22:31 -0700
+
+
+Started GET "/" for ::1 at 2016-04-17 02:22:35 -0700
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (0.6ms)
+Completed 200 OK in 6ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/landing.self-b1d4c79b747f2a05e9b2e3c0fc47909b54f0a0fbea1939b0f0c359b1291ed9b2.css?body=1" for ::1 at 2016-04-17 02:22:35 -0700
