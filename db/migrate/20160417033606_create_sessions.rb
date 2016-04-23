@@ -6,5 +6,6 @@ class CreateSessions < ActiveRecord::Migration
       t.string :ip_address
       t.timestamps null: false
     end
+    add_index :sessions, :token
   end
 end

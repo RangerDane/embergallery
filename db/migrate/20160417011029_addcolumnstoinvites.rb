@@ -3,5 +3,6 @@ class Addcolumnstoinvites < ActiveRecord::Migration
     add_column :invites, :giver_id, :integer
     add_column :invites, :receiver_id, :integer
     add_index :invites, :giver_id
+    add_index :invites, :code
   end
 end

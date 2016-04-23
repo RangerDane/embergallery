@@ -32,11 +32,15 @@ ActiveRecord::Schema.define(version: 20160417034655) do
     t.integer  "receiver_id"
   end
 
+  add_index "invites", ["code"], name: "index_invites_on_code"
   add_index "invites", ["giver_id"], name: "index_invites_on_giver_id"
 
   create_table "series", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "sessions", force: :cascade do |t|
@@ -47,11 +51,15 @@ ActiveRecord::Schema.define(version: 20160417034655) do
     t.datetime "updated_at", null: false
   end
 
+  add_index "sessions", ["token"], name: "index_sessions_on_token"
+
   create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "password_digest"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end
+
+  add_index "users", ["email"], name: "index_users_on_email"
 
 end

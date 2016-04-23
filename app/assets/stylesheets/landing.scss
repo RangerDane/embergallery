@@ -3,14 +3,14 @@ $dark: #033649;
 $light: white;
 
 @keyframes swiveltoright {
-  from { transform: rotateY(0deg) scaleX(1); }
-  to { transform: rotateY(15deg) scaleX(0.95); }
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(15deg); }
 }
 
 @keyframes swiveltoleft
 {
-  from { transform: rotateY(0deg) scaleX(1); }
-  to { transform: rotateY(-15deg) scaleX(0.95); }
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(-15deg); }
 }
 
 html, body
@@ -25,7 +25,7 @@ html, body
 body
 {
   max-height: 100vh;
-  perspective: 150vh;
+  perspective: 100vw;
   overflow-y: auto;
 }
 
@@ -140,7 +140,7 @@ div.slice
   {
     img
     {
-      transform: rotateY(15deg) scaleX(0.95);
+      transform: rotateY(15deg);
       animation: 3s swiveltoright;
     }
   }
@@ -149,7 +149,7 @@ div.slice
   {
     img
     {
-      transform: rotateY(-15deg) scaleX(0.95);
+      transform: rotateY(-15deg);
       animation: 3s swiveltoleft;
     }
   }
