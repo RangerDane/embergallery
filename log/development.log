@@ -19071,3 +19071,10 @@ Migrating to CreateSeries (20160417034655)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+
+
+Started GET "/" for ::1 at 2016-04-22 22:51:05 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by LandingController#index as HTML
+  Rendered landing/main.html.erb within layouts/landing (9.1ms)
+Completed 200 OK in 38ms (Views: 36.9ms | ActiveRecord: 0.0ms)
