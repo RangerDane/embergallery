@@ -29240,3 +29240,87 @@ Processing by UsersController#create as HTML
   [1m[36mInvite Load (1.2ms)[0m  [1mSELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1[0m  [["code", ""]]
   Rendered users/new.html.erb within layouts/landing (0.3ms)
 Completed 200 OK in 62ms (Views: 30.1ms | ActiveRecord: 10.1ms)
+
+
+Started POST "/signup" for ::1 at 2016-04-25 16:08:54 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"DQNPyjWCuv0swUNHoqAu2DM1pltI7aeGJIGWWTnA+/lAOQMIBLhNQPvR/5TN3+7QpCmYF5kjBhngHMga0NPuaQ==", "invite"=>{"code"=>""}, "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"Sign Up"}
+  [1m[35mInvite Load (25.1ms)[0m  SELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1  [["code", ""]]
+  Rendered users/new.html.erb within layouts/landing (0.4ms)
+Completed 200 OK in 80ms (Views: 23.4ms | ActiveRecord: 25.1ms)
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-25 16:08:55 -0700
+
+
+Started GET "/assets/landing.self-af844c312ccea3bb9b3b47cf9062c5e1e4531f484cca9206ff599b2df5c63430.css?body=1" for ::1 at 2016-04-25 16:08:55 -0700
+
+
+Started POST "/signup" for ::1 at 2016-04-25 16:09:03 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"DQNPyjWCuv0swUNHoqAu2DM1pltI7aeGJIGWWTnA+/lAOQMIBLhNQPvR/5TN3+7QpCmYF5kjBhngHMga0NPuaQ==", "invite"=>{"code"=>""}, "user"=>{"email"=>"", "password"=>"[FILTERED]"}, "name"=>"Sign Up"}
+  [1m[36mInvite Load (0.2ms)[0m  [1mSELECT  "invites".* FROM "invites" WHERE "invites"."code" = ? LIMIT 1[0m  [["code", ""]]
+  Rendered users/new.html.erb within layouts/landing (0.4ms)
+Completed 200 OK in 17ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/reset.self-f8064d04f968f2367eff3bc3728eb132daf7499f170ece3f2108a03e00494ef6.css?body=1" for ::1 at 2016-04-25 16:09:03 -0700
+
+
+Started GET "/assets/landing.self-af844c312ccea3bb9b3b47cf9062c5e1e4531f484cca9206ff599b2df5c63430.css?body=1" for ::1 at 2016-04-25 16:09:03 -0700
+
+
+Started GET "/preview/doot" for ::1 at 2016-04-25 16:12:08 -0700
+Processing by GalleryController#show as HTML
+  Parameters: {"subdomain"=>"doot"}
+  [1m[35mGallery Load (2.8ms)[0m  SELECT  "galleries".* FROM "galleries" WHERE "galleries"."subdomain" = ? LIMIT 1  [["subdomain", ""]]
+  [1m[36mGallery Load (0.2ms)[0m  [1mSELECT  "galleries".* FROM "galleries" WHERE "galleries"."subdomain" = ? LIMIT 1[0m  [["subdomain", "doot"]]
+  Rendered gallery/show.html.erb within layouts/gallery (14.2ms)
+Completed 200 OK in 124ms (Views: 71.0ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/javascripts/gallery.js" for ::1 at 2016-04-25 16:12:08 -0700
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/gallery.js"):
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.1) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.1) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (18.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (84.0ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.7ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/actionpack-4.2.5.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (187.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.9ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.2ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (54.1ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (3.3ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.4ms)
+  Rendered /home/msg/.rvm/gems/ruby-2.2.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (120.5ms)
