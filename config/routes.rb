@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get 'signin', to: 'sessions#new'
   post 'signin', to: 'sessions#create'
   get 'signout', to: 'sessions#destroy'
-  get '/editor/*', to: 'users#show', as: :editor
+  get '/builder', to: 'landing#builder', as: :builder
+  match 'builder/*path', to: 'landing#builder', via: [:get]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,0 +1,89 @@
+/*
+ *= require reset.scss
+ *= require_self
+ */
+
+$dark: #033649;
+$light: white;
+
+html, body
+{
+  height: 100%;
+  background-color: rgba(0,0,0,0.25);
+}
+
+div.everything
+{
+  display: flex;
+  flex-direction: column;
+}
+
+header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  h1
+  {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px;
+  }
+  span
+  {
+    flex: 0 1 auto;
+    font-size: 14px;
+    padding: 10px;
+    a
+    {
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+  background-color: $dark;
+  color: $light;
+}
+
+main
+{
+  div.galleries
+  {
+    display: flex;
+    align-items: flex-end;
+
+    margin: 5px 5px -20px 5px;
+
+    div.gallery
+    {
+      flex: 0 1 auto;
+
+      font-size: 18px;
+      padding: 10px 10px 20px 10px;
+      margin: 5px;
+      background: rgba(255,255,255,0.25);
+      border-radius: 10px;
+    }
+
+    div.active
+    {
+      margin: 10px;
+      background: rgba( 255, 255, 255, 0.75 );
+    }
+  }
+
+  div.settings
+  {
+    display: flex;
+    flex-wrap: wrap;
+
+    background: white;
+
+
+    div.panel
+    {
+      padding: 10px;
+      margin: 0 10px 10px 0;
+      background: rgba( 255,255,255,0.25 );
+    }
+  }
+}

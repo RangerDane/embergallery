@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ember Gallery | Builder</title>
+  <link href='https://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'builder', media: 'all'%>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+<%= yield :javascript_includes %>
+
+BUILDER
+
+</body>
+</html>

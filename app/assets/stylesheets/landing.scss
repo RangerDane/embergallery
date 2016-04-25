@@ -132,6 +132,15 @@ div.slice
     h1, p
     {
       transform: translateZ(5vw);
+
+      a
+      {
+        font-weight: bold;
+      }
+      a:hover
+      {
+        color: blue;
+      }
     }
 
     h1
@@ -168,9 +177,11 @@ div.slice
 
   div.middle
   {
-    transition: 0.5s;
+    max-width: 50vw;
     h2
     {
+      transform: rotateY( -15deg );
+      font-size: 4vw;
       text-align: center;
       padding: 0.5vw;
     }
@@ -192,7 +203,7 @@ div.slice
       {
         flex: 1 0 auto;
 
-        min-width: 80%;
+        min-width: 90%;
 
         display: flex;
 
@@ -201,8 +212,6 @@ div.slice
           flex: 0 1 auto;
           display: flex;
           flex-direction: column;
-
-          min-width: 30%;
 
           text-align: right;
         }
@@ -216,25 +225,26 @@ div.slice
           input
           {
             padding-left: 0.5vw;
-            font-size: 1.25vw;
+            font-size: 2vw;
             background-color: rgba(0,0,0,0.1);
           }
         }
       }
       div.button
       {
-        width: 80%;
+        width: 90%;
         display: flex;
         input.button
         {
           flex: 1 0 auto;
           text-align: center;
-          font-size: 1.5vw;
+          font-size: 3vw;
           font-weight: bold;
 
           padding: 0.5vw;
           margin: 0.5vw 0;
 
+          transform: rotateY( 15deg );
           transition: 0.1s;
         }
         input.button:hover
@@ -244,8 +254,15 @@ div.slice
         }
         input.button:active
         {
-          transform: scale( 0.9 );
+          transform: scale( 0.9 ) rotateY( 15deg );
           box-shadow: 0 0 0;
+        }
+      }
+      div.text
+      {
+        a
+        {
+          font-weight: bold;
         }
       }
       div
@@ -254,7 +271,7 @@ div.slice
         {
           margin: 0.1vw;
           padding: 0.1vw 0.5vw;
-          font-size: 1.25vw;
+          font-size: 2vw;
         }
       }
 
