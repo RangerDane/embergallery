@@ -7,3 +7,4 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Gallery.create(name:"Doot McDoot", subdomain: "doot")
+Invite.create(code: "hello")

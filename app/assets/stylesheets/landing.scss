@@ -1,16 +1,26 @@
+/*
+ *= require reset.scss
+ *= require_self
+ */
 
 $dark: #033649;
 $light: white;
 
 @keyframes swiveltoright {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(15deg); }
+  from { transform: rotateY(0deg) scaleX( 1.0 ); }
+  to { transform: rotateY(15deg) scaleX( 0.95 ); }
 }
 
 @keyframes swiveltoleft
 {
-  from { transform: rotateY(0deg); }
-  to { transform: rotateY(-15deg); }
+  from { transform: rotateY(0deg) scaleX( 1.0 ); }
+  to { transform: rotateY(-15deg) scaleX( 0.95 ); }
+}
+
+@keyframes pulse
+{
+  from { perspective: 0px; }
+  to { perspective: 100px; }
 }
 
 html, body
@@ -26,6 +36,8 @@ body
 {
   max-height: 100vh;
   perspective: 100vw;
+  perspective-origin: 50% 55%;
+  // animation: 0.5s pulse infinite alternate;
   overflow-y: auto;
 }
 
@@ -85,7 +97,7 @@ header
       input
       {
         font-size: 1vw;
-        background: rgba( 1, 1, 1, 0.25 );
+        background: rgba( 0, 0, 0, 0.25 );
         padding: 0.5vw;
         border: 0px;
         color: white;
@@ -109,7 +121,7 @@ div.slice
 
   justify-content: center;
 
-  div.left, div.right
+  div.left, div.right, div.middle
   {
     flex: 1 0 auto;
 
@@ -140,7 +152,7 @@ div.slice
   {
     img
     {
-      transform: rotateY(15deg);
+      transform: rotateY(15deg) scaleX( 0.95 );
       animation: 3s swiveltoright;
     }
   }
@@ -149,8 +161,103 @@ div.slice
   {
     img
     {
-      transform: rotateY(-15deg);
+      transform: rotateY(-15deg) scaleX( 0.95 );
       animation: 3s swiveltoleft;
+    }
+  }
+
+  div.middle
+  {
+    transition: 0.5s;
+    h2
+    {
+      text-align: center;
+      padding: 0.5vw;
+    }
+
+    div.error
+    {
+      text-align: center;
+      color: red;
+      margin-bottom: 1vw;
+    }
+    form
+    {
+      display: flex;
+      flex-direction: column;
+
+      align-items: center;
+
+      div.tabular
+      {
+        flex: 1 0 auto;
+
+        min-width: 80%;
+
+        display: flex;
+
+        div.labels
+        {
+          flex: 0 1 auto;
+          display: flex;
+          flex-direction: column;
+
+          min-width: 30%;
+
+          text-align: right;
+        }
+
+        div.inputs
+        {
+          flex: 1 0 auto;
+          display: flex;
+          flex-direction: column;
+
+          input
+          {
+            padding-left: 0.5vw;
+            font-size: 1.25vw;
+            background-color: rgba(0,0,0,0.1);
+          }
+        }
+      }
+      div.button
+      {
+        width: 80%;
+        display: flex;
+        input.button
+        {
+          flex: 1 0 auto;
+          text-align: center;
+          font-size: 1.5vw;
+          font-weight: bold;
+
+          padding: 0.5vw;
+          margin: 0.5vw 0;
+
+          transition: 0.1s;
+        }
+        input.button:hover
+        {
+          background-color: $dark;
+          color: $light;
+        }
+        input.button:active
+        {
+          transform: scale( 0.9 );
+          box-shadow: 0 0 0;
+        }
+      }
+      div
+      {
+        label, input
+        {
+          margin: 0.1vw;
+          padding: 0.1vw 0.5vw;
+          font-size: 1.25vw;
+        }
+      }
+
     }
   }
 }
@@ -169,6 +276,7 @@ div.slice:nth-child(even)
 
 footer
 {
+  flex: 1 0 auto;
   background-color: $dark;
   color: $light;
   display: flex;

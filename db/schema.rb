@@ -25,11 +25,10 @@ ActiveRecord::Schema.define(version: 20160417034655) do
 
   create_table "invites", force: :cascade do |t|
     t.string   "code"
-    t.string   "email"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.integer  "giver_id"
-    t.integer  "receiver_id"
+    t.integer  "uses",       default: 1
   end
 
   add_index "invites", ["code"], name: "index_invites_on_code"

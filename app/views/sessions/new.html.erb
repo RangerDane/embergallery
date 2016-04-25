@@ -1,38 +1,25 @@
 <div id="container">
   <header>
     <h1>Ember Gallery</h1>
-    <nav>
-      <div class="error"><%= flash[:signin] %></div>
-      <form class="signin" action="signin" method="post">
-        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
-        <label for="email">email:</label>
-        <input type="text" name="user[email]" id="email">
-        <label for="password">password:</label>
-        <input type="password" name="user[password]" id="password">
-        <input class="button" type="submit" name="name" value="sign in">
-      </form>
-    </nav>
   </header>
   <div class="slice">
     <div class="middle">
-      <h2>Get started!</h2>
-      <div class="error"><%= flash.now[:signup] %></div>
-      <form class="" action="signup" method="post">
+      <h2>Sign in!</h2>
+      <div class="error"><%= flash.now[:signin] %></div>
+      <form class="" action="signin" method="post">
         <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
         <div class="tabular">
           <div class="labels">
-            <label for="code">invite code:</label>
             <label for="email">email:</label>
             <label for="password">password:</label>
           </div>
           <div class="inputs">
-            <input type="text" name="invite[code]" value="<%= @code %>">
             <input type="text" name="user[email]" id="email" value="<%= @autofill_email %>">
             <input type="password" name="user[password]" id="password">
           </div>
         </div>
         <div class="button">
-          <input class="button" type="submit" name="name" value="Sign Up">
+          <input class="button" type="submit" name="name" value="Sign In">
         </div>
       </form>
     </div>

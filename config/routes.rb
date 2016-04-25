@@ -1,12 +1,16 @@
 Rails.application.routes.draw do
 
-  match '/', to: 'landing#index', constraints: { subdomain: 'www' }, via: [:get, :post, :put, :patch, :delete]
-  match '/', to: 'gallery#show', constraints: { subdomain: /.+/ }, via: [:get, :post, :put, :patch, :delete]
-  get 'gallery/:subdomain', to: 'gallery#show'
-  post 'signup', to: 'users#new'
-  post 'signin', to: 'landing#signin'
-
+  match '/', to: 'landing#index', constraints: { subdomain: 'www' }, via: [:get, :post]
+  match '/', to: 'gallery#show', constraints: { subdomain: /.+/ }, via: [:get, :post]
   root to: 'landing#index'
+
+  get 'preview/:subdomain', to: 'gallery#show'
+  get 'signup', to: 'users#new'
+  post 'signup', to: 'users#create'
+  get 'signin', to: 'sessions#new'
+  post 'signin', to: 'sessions#create'
+  get 'signout', to: 'sessions#destroy'
+  get '/editor/*', to: 'users#show', as: :editor
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

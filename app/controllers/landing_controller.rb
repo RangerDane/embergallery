@@ -1,10 +1,17 @@
 class LandingController < ApplicationController
+  layout :resolve_layout
+
   def index
-    render :main
+    if current_user
+      render :editor
+    else
+      render :main
+    end
   end
 
-  def signin
-    flash[:signin] = "No user found matching credentials"
-    redirect_to root_url
+  private
+
+  def resolve_layout
+    current_user ? "editor" : "landing"
   end
 end
