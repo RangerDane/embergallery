@@ -1,4 +1,4 @@
-== Ember Gallery
+# Ember Gallery
 
 [Live!](http://ember.gallery)
 
@@ -11,12 +11,12 @@ photographers consider naive cropping to be in poor taste.
 
 Galleries are hosted at subdomain.ember.gallery
 
-Features:
+##Features:
 * Multiple-session auth
-* Subdomain gallery hosting (preview at [doot.ember.gallery])(http://doot.ember.gallery) )
+* Subdomain gallery hosting (preview at [doot.ember.gallery](http://doot.ember.gallery) )
 * Separation of assets (single javascript/css per gallery)
 
-Roadmap:
+##Roadmap:
 * Style class to dynamically generate CSS based on user style preferences
 * Different templates per gallery
 * Build out a very simple editor for galleries
